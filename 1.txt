@@ -1,0 +1,8 @@
+git 使用步骤 
+    1.git init
+    2.git add .
+    3.git remote <respone>
+    4.git commit -m <name>
+    5.git push -u origin <branchName> 
+git 创建分支 git branch -b <branchName>
+git 切换分支 git checkout <branchName>
