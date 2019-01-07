@@ -4,5 +4,22 @@ git 使用步骤
     3.git remote <respone>
     4.git commit -m <name>
     5.git push -u origin <branchName> 
+
 git 创建分支 git checkout -b <branchName>
 git 切换分支 git checkout <branchName>
+git 删除本地分支 git branch -d <branchName>
+git 删除远程分支 git push origin :heads/<branchName>
+git 合并分支  git merge 当前分支合并到主分支<branchName> 
+question:  
+   git合并分支 时出现问题 Already up-to-date
+        1.git checkout 需要合并的主分支<name>
+        2.git reset --hard 被合并的分支<name>
+        3.git push --force origin 合并主分支 
+
+git tag使用
+    1.查看 git tag
+    2.创建 git tag <tagName>
+    3.删除本地 git tag -d <tagName>
+    4.删除远程 git push origin :refs/tags/<tagName>
+    5.切换 git checkout tag 
+    6.创建基于某个tag创建分支 git checkout -B <branchName> <tagName>
